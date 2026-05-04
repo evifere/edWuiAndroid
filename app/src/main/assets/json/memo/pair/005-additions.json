@@ -1,0 +1,47 @@
+{
+  "board": {
+    "title": ["Les additions"],
+    "description": ["Trouves le résulat de chaque addition"],
+    "decks": [{
+      "deck": [{
+        "$": {
+          "name": "Les doubles I"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">1 + 1</span>", "<span style=\"vertical-align: middle; \">= 2</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">2 + 2</span>", "<span style=\"vertical-align: middle; \">= 4</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">3 + 3</span>", "<span style=\"vertical-align: middle; \">= 6</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">4 + 4</span>", "<span style=\"vertical-align: middle; \">= 8</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">5 + 5</span>", "<span style=\"vertical-align: middle; \">= 10</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">6 + 6</span>", "<span style=\"vertical-align: middle; \">= 12</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Les doubles II"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">7 + 7</span>", "<span style=\"vertical-align: middle; \">= 14</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">8 + 8</span>", "<span style=\"vertical-align: middle; \">= 16</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">9 + 9</span>", "<span style=\"vertical-align: middle; \">= 18</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">10 + 10</span>", "<span style=\"vertical-align: middle; \">= 20</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">11 + 11</span>", "<span style=\"vertical-align: middle; \">= 22</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">12 + 12</span>", "<span style=\"vertical-align: middle; \">= 24</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">13 + 13</span>", "<span style=\"vertical-align: middle; \">= 26</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">14 + 14</span>", "<span style=\"vertical-align: middle; \">28</span>"]
+        }]
+      }]
+    }]
+  }
+}

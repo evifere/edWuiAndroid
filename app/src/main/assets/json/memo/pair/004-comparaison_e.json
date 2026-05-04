@@ -1,0 +1,97 @@
+{
+  "board": {
+    "title": ["Comparaison d'écriture"],
+    "description": ["Trouves le prénom en minuscule et celui en majuscule"],
+    "decks": [{
+      "deck": [{
+        "$": {
+          "name": "Les prénoms"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Manon</span>", "<span style=\"vertical-align: middle; \">MANON</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Julien</span>", "<span style=\"vertical-align: middle; \">JULIEN</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nicolas</span>", "<span style=\"vertical-align: middle; \">NICOLAS</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Lucile</span>", "<span style=\"vertical-align: middle; \">LUCILE</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Samuel</span>", "<span style=\"vertical-align: middle; \">SAMUEL</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Marie-Line</span>", "<span style=\"vertical-align: middle; \">MARIE-LINE</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Les chiffres en lettres"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Un</span>", "<span style=\"vertical-align: middle; \">UN</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Deux</span>", "<span style=\"vertical-align: middle; \">DEUX</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Trois</span>", "<span style=\"vertical-align: middle; \">TROIS</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Quatre</span>", "<span style=\"vertical-align: middle; \">QUATRE</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cinq</span>", "<span style=\"vertical-align: middle; \">CINQ</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Six</span>", "<span style=\"vertical-align: middle; \">SIX</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Sept</span>", "<span style=\"vertical-align: middle; \">SEPT</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Huit</span>", "<span style=\"vertical-align: middle; \">HUIT</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Neuf</span>", "<span style=\"vertical-align: middle; \">NEUF</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Les jours de la semaine"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Lundi</span>", "<span style=\"vertical-align: middle; \">LUNDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mardi</span>", "<span style=\"vertical-align: middle; \">MARDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mercredi</span>", "<span style=\"vertical-align: middle; \">MERCREDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Jeudi</span>", "<span style=\"vertical-align: middle; \">JEUDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vendredi</span>", "<span style=\"vertical-align: middle; \">VENDREDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Samedi</span>", "<span style=\"vertical-align: middle; \">SAMEDI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Dimanche</span>", "<span style=\"vertical-align: middle; \">DIMANCHE</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Les mois de l'année"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Janvier</span>", "<span style=\"vertical-align: middle; \">JANVIER</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Février</span>", "<span style=\"vertical-align: middle; \">FEVRIER</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mars</span>", "<span style=\"vertical-align: middle; \">MARS</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Avril</span>", "<span style=\"vertical-align: middle; \">AVRIL</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mai</span>", "<span style=\"vertical-align: middle; \">MAI</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Juin</span>", "<span style=\"vertical-align: middle; \">JUIN</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Juillet</span>", "<span style=\"vertical-align: middle; \">JUILLET</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Aôut</span>", "<span style=\"vertical-align: middle; \">AOUT</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Septembre</span>", "<span style=\"vertical-align: middle; \">SEPTEMBRE</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Octobre</span>", "<span style=\"vertical-align: middle; \">OCTOBRE</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Novembre</span>", "<span style=\"vertical-align: middle; \">NOVEMBRE</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Décembre</span>", "<span style=\"vertical-align: middle; \">DECEMBRE</span>"]
+        }]
+      }]
+    }]
+  }
+}

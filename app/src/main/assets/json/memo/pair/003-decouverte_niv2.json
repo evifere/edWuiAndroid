@@ -1,0 +1,549 @@
+{
+  "board": {
+    "title": ["Découverte du monde niv 2"],
+    "description": ["Trouves l'image et le texte associé"],
+    "decks": [{
+      "deck": [{
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Autruche</span>", "<img src=\"./img/animaux/autruche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Biche</span>", "<img src=\"./img/animaux/biche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Bison</span>", "<img src=\"./img/animaux/bison.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Canard</span>", "<img src=\"./img/animaux/canard.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cerf</span>", "<img src=\"./img/animaux/cerf.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chameau</span>", "<img src=\"./img/animaux/chameau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chat</span>", "<img src=\"./img/animaux/chat.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cheval</span>", "<img src=\"./img/animaux/cheval.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Chien</span>", "<img src=\"./img/animaux/chien.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chouette</span>", "<img src=\"./img/animaux/chouette.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chêvre</span>", "<img src=\"./img/animaux/chevre.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cochon</span>", "<img src=\"./img/animaux/cochon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Coqetpoule</span>", "<img src=\"./img/animaux/coqetpoule.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Crabe</span>", "<img src=\"./img/animaux/crabe.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Crocodile</span>", "<img src=\"./img/animaux/crocodile.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cygne</span>", "<img src=\"./img/animaux/cygne.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-3"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Dauphin</span>", "<img src=\"./img/animaux/dauphin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ecureuil</span>", "<img src=\"./img/animaux/ecureuil.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Elephant</span>", "<img src=\"./img/animaux/elephant.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Girafes</span>", "<img src=\"./img/animaux/girafes.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Gorille</span>", "<img src=\"./img/animaux/gorille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Grenouille</span>", "<img src=\"./img/animaux/grenouille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Hippopotame</span>", "<img src=\"./img/animaux/hippopotame.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Kangourou</span>", "<img src=\"./img/animaux/kangourou.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-4"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Lapin</span>", "<img src=\"./img/animaux/lapin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Lion et lionne</span>", "<img src=\"./img/animaux/lionetlionne.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Loup</span>", "<img src=\"./img/animaux/loup.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mouton</span>", "<img src=\"./img/animaux/mouton.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Oie</span>", "<img src=\"./img/animaux/oie.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Oiseau</span>", "<img src=\"./img/animaux/oiseau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ours</span>", "<img src=\"./img/animaux/ours.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Panda</span>", "<img src=\"./img/animaux/panda.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-5"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Perroquet</span>", "<img src=\"./img/animaux/perroquet.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pingouin</span>", "<img src=\"./img/animaux/pingouin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poisson</span>", "<img src=\"./img/animaux/poisson.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Renard</span>", "<img src=\"./img/animaux/renard.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Serpent</span>", "<img src=\"./img/animaux/serpent.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Singe</span>", "<img src=\"./img/animaux/singe.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Souris</span>", "<img src=\"./img/animaux/souris.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tigre</span>", "<img src=\"./img/animaux/tigre.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Animaux I-6"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Tortue</span>", "<img src=\"./img/animaux/tortue.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Toucan</span>", "<img src=\"./img/animaux/toucan.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vache</span>", "<img src=\"./img/animaux/vache.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Zebre</span>", "<img src=\"./img/animaux/zebre.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Autruche</span>", "<img src=\"./img/animaux/autruche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Biche</span>", "<img src=\"./img/animaux/biche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Bison</span>", "<img src=\"./img/animaux/bison.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Canard</span>", "<img src=\"./img/animaux/canard.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cerf</span>", "<img src=\"./img/animaux/cerf.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chameau</span>", "<img src=\"./img/animaux/chameau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chat</span>", "<img src=\"./img/animaux/chat.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cheval</span>", "<img src=\"./img/animaux/cheval.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Chien</span>", "<img src=\"./img/animaux/chien.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chouette</span>", "<img src=\"./img/animaux/chouette.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Chêvre</span>", "<img src=\"./img/animaux/chevre.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cochon</span>", "<img src=\"./img/animaux/cochon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Coq et poule</span>", "<img src=\"./img/animaux/coqetpoule.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Crabe</span>", "<img src=\"./img/animaux/crabe.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Crocodile</span>", "<img src=\"./img/animaux/crocodile.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cygne</span>", "<img src=\"./img/animaux/cygne.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-3"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Dauphin</span>", "<img src=\"./img/animaux/dauphin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ecureuil</span>", "<img src=\"./img/animaux/ecureuil.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Elephant</span>", "<img src=\"./img/animaux/elephant.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Girafes</span>", "<img src=\"./img/animaux/girafes.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Gorille</span>", "<img src=\"./img/animaux/gorille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Grenouille</span>", "<img src=\"./img/animaux/grenouille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Hippopotame</span>", "<img src=\"./img/animaux/hippopotame.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Kangourou</span>", "<img src=\"./img/animaux/kangourou.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-4"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Lapin</span>", "<img src=\"./img/animaux/lapin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Lion et lionne</span>", "<img src=\"./img/animaux/lionetlionne.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Loup</span>", "<img src=\"./img/animaux/loup.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Mouton</span>", "<img src=\"./img/animaux/mouton.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Oie</span>", "<img src=\"./img/animaux/oie.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Oiseau</span>", "<img src=\"./img/animaux/oiseau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ours</span>", "<img src=\"./img/animaux/ours.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Panda</span>", "<img src=\"./img/animaux/panda.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-5"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Perroquet</span>", "<img src=\"./img/animaux/perroquet.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pingouin</span>", "<img src=\"./img/animaux/pingouin.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poisson</span>", "<img src=\"./img/animaux/poisson.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Renard</span>", "<img src=\"./img/animaux/renard.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Serpent</span>", "<img src=\"./img/animaux/serpent.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Singe</span>", "<img src=\"./img/animaux/singe.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Souris</span>", "<img src=\"./img/animaux/souris.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tigre</span>", "<img src=\"./img/animaux/tigre.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Animaux II-6"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Tortue</span>", "<img src=\"./img/animaux/tortue.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Toucan</span>", "<img src=\"./img/animaux/toucan.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vache</span>", "<img src=\"./img/animaux/vache.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Zebre</span>", "<img src=\"./img/animaux/zebre.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Fruits I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Cerise</span>", "<img src=\"./img/fruits/cerise.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Citron</span>", "<img src=\"./img/fruits/citron.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Fraise</span>", "<img src=\"./img/fruits/fraise.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Melon</span>", "<img src=\"./img/fruits/melon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pêche</span>", "<img src=\"./img/fruits/peche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poire</span>", "<img src=\"./img/fruits/poire.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Fruits I-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Kiwi</span>", "<img src=\"./img/fruits/kiwi.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pamplemousse</span>", "<img src=\"./img/fruits/pamplemousse.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Fruits de la passion</span>", "<img src=\"./img/fruits/passion-fruit.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Papaye</span>", "<img src=\"./img/fruits/papaye.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pasteque</span>", "<img src=\"./img/fruits/pasteque.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pomme</span>", "<img src=\"./img/fruits/pomme.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Fruits II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Cerise</span>", "<img src=\"./img/fruits/cerise.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Citron</span>", "<img src=\"./img/fruits/citron.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Fraise</span>", "<img src=\"./img/fruits/fraise.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Melon</span>", "<img src=\"./img/fruits/melon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pêche</span>", "<img src=\"./img/fruits/peche.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poire</span>", "<img src=\"./img/fruits/poire.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Fruits II-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Kiwi</span>", "<img src=\"./img/fruits/kiwi.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pamplemousse</span>", "<img src=\"./img/fruits/pamplemousse.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Fruits de la passion</span>", "<img src=\"./img/fruits/passion-fruit.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Papaye</span>", "<img src=\"./img/fruits/papaye.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pasteque</span>", "<img src=\"./img/fruits/pasteque.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pomme</span>", "<img src=\"./img/fruits/pomme.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Couleurs I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Rouge</span>", "<span style=\"display: block; background-color: red; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vert</span>", "<span style=\"display: block; background-color: green; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Jaune</span>", "<span style=\"display: block; background-color: yellow; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Bleu</span>", "<span style=\"display: block; background-color: blue; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Violet</span>", "<span style=\"display: block; background-color: purple; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Noir</span>", "<span style=\"display: block; background-color: black; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Couleurs II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Rouge</span>", "<span style=\"background-color: red; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vert</span>", "<span style=\"background-color: green; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Jaune</span>", "<span style=\"background-color: yellow; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Bleu</span>", "<span style=\"background-color: blue; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Violet</span>", "<span style=\"background-color: purple; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Noir</span>", "<span style=\"background-color: black; white-space: nowrap; vertical-align: middle; \">&nbsp;<br><br><br></span>"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Legumes I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Asperge</span>", "<img src=\"./img/legumes/asperge.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Aubergine</span>", "<img src=\"./img/legumes/aubergine.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Carotte</span>", "<img src=\"./img/legumes/carotte.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Champignons</span>", "<img src=\"./img/legumes/champignons.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Courgette</span>", "<img src=\"./img/legumes/courgette.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Maïs</span>", "<img src=\"./img/legumes/mais.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Legumes I-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Oignon</span>", "<img src=\"./img/legumes/oignon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Petits pois</span>", "<img src=\"./img/legumes/petitspois.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poireau</span>", "<img src=\"./img/legumes/poireau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pomme de terre</span>", "<img src=\"./img/legumes/pommedeterre.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Salade</span>", "<img src=\"./img/legumes/salade.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tomate</span>", "<img src=\"./img/legumes/tomate.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Legumes II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Asperge</span>", "<img src=\"./img/legumes/asperge.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Aubergine</span>", "<img src=\"./img/legumes/aubergine.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Carotte</span>", "<img src=\"./img/legumes/carotte.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Champignons</span>", "<img src=\"./img/legumes/champignons.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Courgette</span>", "<img src=\"./img/legumes/courgette.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Maïs</span>", "<img src=\"./img/legumes/mais.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Legumes II-2"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Oignon</span>", "<img src=\"./img/legumes/oignon.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Petits pois</span>", "<img src=\"./img/legumes/petitspois.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Poireau</span>", "<img src=\"./img/legumes/poireau.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pomme de terre</span>", "<img src=\"./img/legumes/pommedeterre.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Salade</span>", "<img src=\"./img/legumes/salade.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tomate</span>", "<img src=\"./img/legumes/tomate.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Meteo I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Arc en ciel</span>", "<img src=\"./img/meteo/arc en ciel.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Lune</span>", "<img src=\"./img/meteo/lune.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Neige</span>", "<img src=\"./img/meteo/neige.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nuage</span>", "<img src=\"./img/meteo/nuage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Orage</span>", "<img src=\"./img/meteo/orage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pluie</span>", "<img src=\"./img/meteo/pluie.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Soleil nuage</span>", "<img src=\"./img/meteo/soleil nuage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Soleil</span>", "<img src=\"./img/meteo/soleil.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vent</span>", "<img src=\"./img/meteo/vent.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Meteo II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Arc en ciel</span>", "<img src=\"./img/meteo/arc en ciel.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Lune</span>", "<img src=\"./img/meteo/lune.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Neige</span>", "<img src=\"./img/meteo/neige.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nuage</span>", "<img src=\"./img/meteo/nuage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Orage</span>", "<img src=\"./img/meteo/orage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Pluie</span>", "<img src=\"./img/meteo/pluie.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Soleil nuage</span>", "<img src=\"./img/meteo/soleil nuage.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Soleil</span>", "<img src=\"./img/meteo/soleil.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vent</span>", "<img src=\"./img/meteo/vent.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Nombres II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Un</span>", "<img src=\"./img/nombres/1.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Deux</span>", "<img src=\"./img/nombres/2.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Trois</span>", "<img src=\"./img/nombres/3.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Quatre</span>", "<img src=\"./img/nombres/4.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Cinq</span>", "<img src=\"./img/nombres/5.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Six</span>", "<img src=\"./img/nombres/6.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Sept</span>", "<img src=\"./img/nombres/7.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Huit</span>", "<img src=\"./img/nombres/8.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Neuf</span>", "<img src=\"./img/nombres/9.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "false",
+          "name": "Petites bêtes I-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Scorpion</span>", "<img src=\"./img/ptitesbetes/Scorpion.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Abeille</span>", "<img src=\"./img/ptitesbetes/abeille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Araignee</span>", "<img src=\"./img/ptitesbetes/araignee.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Coccinelle</span>", "<img src=\"./img/ptitesbetes/coccinelle.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Escargot</span>", "<img src=\"./img/ptitesbetes/escargot.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Libellule</span>", "<img src=\"./img/ptitesbetes/libellule.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Papillon</span>", "<img src=\"./img/ptitesbetes/papillon.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }, {
+        "$": {
+          "hideunselected": "true",
+          "name": "Petites bêtes II-1"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Scorpion</span>", "<img src=\"./img/ptitesbetes/Scorpion.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Abeille</span>", "<img src=\"./img/ptitesbetes/abeille.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Araignee</span>", "<img src=\"./img/ptitesbetes/araignee.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Coccinelle</span>", "<img src=\"./img/ptitesbetes/coccinelle.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Escargot</span>", "<img src=\"./img/ptitesbetes/escargot.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Libellule</span>", "<img src=\"./img/ptitesbetes/libellule.png\" style=\"vertical-align: middle; \">"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Papillon</span>", "<img src=\"./img/ptitesbetes/papillon.png\" style=\"vertical-align: middle; \">"]
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "board": {
+    "title": ["Les conjugaisons"],
+    "description": ["Trouves le pronom et le verbe conjugué associé"],
+    "decks": [{
+      "deck": [{
+        "$": {
+          "name": "Verbe être au présent"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Je</span>", "<span style=\"vertical-align: middle; \">suis</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tu</span>", "<span style=\"vertical-align: middle; \">es</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Il</span>", "<span style=\"vertical-align: middle; \">est</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nous</span>", "<span style=\"vertical-align: middle; \">sommes</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vous</span>", "<span style=\"vertical-align: middle; \">êtes</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ils</span>", "<span style=\"vertical-align: middle; \">sont</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Verbe avoir au présent"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">J</span>", "<span style=\"vertical-align: middle; \">ai</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tu</span>", "<span style=\"vertical-align: middle; \">as</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Il</span>", "<span style=\"vertical-align: middle; \">a</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nous</span>", "<span style=\"vertical-align: middle; \">avons</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vous</span>", "<span style=\"vertical-align: middle; \">avez</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ils</span>", "<span style=\"vertical-align: middle; \">ont</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Verbe aller au présent"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Je</span>", "<span style=\"vertical-align: middle; \">vais</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tu</span>", "<span style=\"vertical-align: middle; \">vas</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Il</span>", "<span style=\"vertical-align: middle; \">va</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nous</span>", "<span style=\"vertical-align: middle; \">allons</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vous</span>", "<span style=\"vertical-align: middle; \">allez</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ils</span>", "<span style=\"vertical-align: middle; \">vont</span>"]
+        }]
+      }, {
+        "$": {
+          "name": "Verbe manger au présent"
+        },
+        "couple": [{
+          "card": ["<span style=\"vertical-align: middle; \">Je</span>", "<span style=\"vertical-align: middle; \">mange</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Tu</span>", "<span style=\"vertical-align: middle; \">manges</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Il</span>", "<span style=\"vertical-align: middle; \">mange</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Nous</span>", "<span style=\"vertical-align: middle; \">mangeons</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Vous</span>", "<span style=\"vertical-align: middle; \">mangez</span>"]
+        }, {
+          "card": ["<span style=\"vertical-align: middle; \">Ils</span>", "<span style=\"vertical-align: middle; \">mangent</span>"]
+        }]
+      }]
+    }]
+  }
+}
