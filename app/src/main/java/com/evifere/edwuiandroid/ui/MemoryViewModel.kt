@@ -28,11 +28,13 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         firstDeck.couple.forEach { couple ->
             couple.card.forEach { raw ->
                 val image = extractImagePath(raw)
+                val text = extractTextFromSpan(raw)
 
                 generatedCards.add(
                     CardModel(
                         id = idCounter++,
                         imagePath = image,
+                        text = text,
                         isFlipped = !firstDeck.metadata.hideunselected
                     )
                 )
@@ -47,5 +49,10 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         val regex = """src="([^"]+)""""
         val match = Regex(regex).find(html)
         return match?.groupValues?.get(1)?.removePrefix("./") ?: ""
+    }
+
+    private fun extractTextFromSpan(html: String): String {
+        val regex = Regex("""<span[^>]*>(.*?)</span>""")
+        return regex.find(html)?.groupValues?.get(1) ?: ""
     }
 }
