@@ -26,3 +26,8 @@ data class Deck(
 data class Couple(
     val card: List<String>
 )
+
+data class DrawerCategory(
+    val title: String,
+    val decks: List<String>
+)

@@ -14,11 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.evifere.edwuiandroid.json.JsonLoader
 import androidx.activity.viewModels
+import androidx.lifecycle.ViewModelProvider
 import com.evifere.edwuiandroid.ui.MemoryScreen
 import com.evifere.edwuiandroid.ui.theme.EdwuiAndroidTheme
 import com.evifere.edwuiandroid.ui.MemoryViewModel
 class MainActivity : ComponentActivity() {
-    private val viewModel: MemoryViewModel by viewModels()
+    private val viewModel: MemoryViewModel by viewModels {
+        ViewModelProvider.AndroidViewModelFactory.getInstance(application)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

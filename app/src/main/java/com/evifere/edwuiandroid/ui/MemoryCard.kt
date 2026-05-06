@@ -59,7 +59,8 @@ fun MemoryCard(
                         text = card.text,
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        modifier = Modifier.align(Alignment.Center)
+                        modifier = Modifier.align(Alignment.Center),
+                        color = Color.Black
                     )
                 }
             }
