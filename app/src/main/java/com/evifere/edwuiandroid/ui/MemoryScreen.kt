@@ -42,7 +42,9 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
                     .background(Color(0xFFF5E6A3))
                 ) {
                 DrawerContent(
-                    viewModel.categories
+                    viewModel.categories,
+                    viewModel,
+                    drawerState
                     /*                onDeckClick = { deck ->
                     // gérer le clic
                     scope.launch { drawerState.close() }

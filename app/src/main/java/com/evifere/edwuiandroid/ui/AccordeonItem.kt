@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.DrawerState
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -15,12 +16,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.evifere.edwuiandroid.data.DrawerCategory
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import kotlinx.coroutines.launch
 
 @Composable
-fun AccordionItem(category: DrawerCategory) {
+fun AccordionItem(category: DrawerCategory, viewModel: MemoryViewModel, drawerState : DrawerState) {
     var expanded by remember { mutableStateOf(false) }
-
+    val scope = rememberCoroutineScope()
     Column {
         // 🔹 Titre principal (JSON)
         Row(
@@ -41,13 +44,14 @@ fun AccordionItem(category: DrawerCategory) {
         // 🔹 Sous-catégories (Decks)
         AnimatedVisibility(visible = expanded) {
             Column {
-                category.decks.forEach { deckName ->
+                category.decks.forEachIndexed  { index,deckName ->
                     Text(
                         text = deckName,
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                // 👉 action quand on clique un deck
+                                viewModel.loadDeck(category.title+".json",index)
+                                scope.launch{drawerState.close()}
                             }
                             .padding(start = 32.dp, top = 8.dp, bottom = 8.dp)
                     )

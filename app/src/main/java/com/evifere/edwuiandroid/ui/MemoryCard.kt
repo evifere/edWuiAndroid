@@ -38,7 +38,7 @@ fun MemoryCard(
             modifier = Modifier
                 .fillMaxSize()
                 .background(
-                    if (card.isFlipped) Color(0xFFF5E6A3) // jaune paille
+                    if (card.isFlipped) card.color
                     else Color(0xFF2196F3) // bleu
                 ),
             contentAlignment = Alignment.Center
@@ -55,13 +55,16 @@ fun MemoryCard(
                     )
                 }
                 else {
-                    Text(
-                        text = card.text,
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.align(Alignment.Center),
-                        color = Color.Black
-                    )
+                    if(card.color == Color(0xFFF5E6A3)){
+                        Text(
+                            text = card.text,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.align(Alignment.Center),
+                            color = Color.Black
+                        )
+
+                    }
                 }
             }
         }
