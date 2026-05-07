@@ -4,6 +4,8 @@ import android.app.Application
 import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableStateOf
 import com.google.gson.Gson
 import com.evifere.edwuiandroid.data.*
 import com.evifere.edwuiandroid.json.JsonLoader
@@ -15,6 +17,13 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         private set
 
     var categories : List<DrawerCategory> = emptyList()
+
+    private val _currentDeck = mutableStateOf<Deck?>(null)
+    var currentDeck: State<Deck?> = _currentDeck
+
+    fun setDeck(deck: Deck) {
+        _currentDeck.value = deck
+    }
 
     init {
         loadCategories()
@@ -36,12 +45,12 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         val json = JsonLoader.loadJsonFromAssets(getApplication<Application>().applicationContext,fileName)
         val root = Gson().fromJson(json, Root::class.java)
 
-        val deck = root.board.decks.first().deck[index]
+        setDeck(root.board.decks.first().deck[index])
 
         val generatedCards = mutableListOf<CardModel>()
         var idCounter = 0
 
-        deck.couple.forEach { couple ->
+        currentDeck.value?.couple?.forEach { couple ->
             couple.card.forEach { raw ->
                 val image = extractImagePath(raw)
                 val text = extractTextFromSpan(raw)
@@ -51,7 +60,7 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
                         id = idCounter++,
                         imagePath = image,
                         text = text,
-                        isFlipped = !deck.metadata.hideunselected,
+                        isFlipped = !(currentDeck.value?.metadata?.hideunselected ?: true) ,
                         color = color
                     )
                 )

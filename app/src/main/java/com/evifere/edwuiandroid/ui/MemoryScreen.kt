@@ -2,8 +2,11 @@ package com.evifere.edwuiandroid.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -22,10 +25,14 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.BlendMode.Companion.Color
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
 
 
@@ -99,10 +106,25 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
             ) {
                 val cards = viewModel.cards
 
-                LazyVerticalGrid(columns = GridCells.Fixed(4)) {
-                    items(cards.size) { index ->
-                        val card = cards[index]
-                        MemoryCard(card)
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Text(viewModel.currentDeck.value?.metadata?.name  ?: "",fontWeight = FontWeight.Bold,
+                        fontSize = 24.sp, color = Color(0xFF000000))
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    LazyVerticalGrid(
+                        columns = GridCells.Fixed(4),
+                        modifier = Modifier.fillMaxSize()
+                    ) {
+                        items(cards.size) { index ->
+                            val card = cards[index]
+                            MemoryCard(card)
+                        }
                     }
                 }
             }
