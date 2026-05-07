@@ -18,6 +18,7 @@ import com.evifere.edwuiandroid.data.DrawerCategory
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.launch
 
 @Composable
@@ -35,10 +36,11 @@ fun AccordionItem(category: DrawerCategory, viewModel: MemoryViewModel, drawerSt
             Text(
                 text = category.title,
                 fontWeight = FontWeight.Bold,
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                color =  Color.White
             )
 
-            Text(if (expanded) "−" else "+")
+            Text(text = if (expanded) "−" else "+",color =  Color.White)
         }
 
         // 🔹 Sous-catégories (Decks)

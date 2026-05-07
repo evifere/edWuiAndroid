@@ -3,6 +3,7 @@ package com.evifere.edwuiandroid.ui
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -17,11 +18,13 @@ import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.BlendMode.Companion.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.launch
 
@@ -37,18 +40,19 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
         drawerState = drawerState,
         drawerContent = {
 
-            ModalDrawerSheet (drawerContainerColor=Color(0xFF0275da),
+            ModalDrawerSheet (drawerContainerColor=androidx.compose.ui.graphics.Color.Transparent,
                 modifier = Modifier
-                    .background(Color(0xFFF5E6A3))
+                    .background(Brush.horizontalGradient(
+                        listOf(
+                            Color(0xFF0275DA),
+                            Color(0xFF001F54)
+                        )
+                    ))
                 ) {
                 DrawerContent(
                     viewModel.categories,
                     viewModel,
                     drawerState
-                    /*                onDeckClick = { deck ->
-                    // gérer le clic
-                    scope.launch { drawerState.close() }
-                }*/
                 )
             }
         }
@@ -56,7 +60,20 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Memory") },
+                    title = { Text("EdWui") },
+                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                        containerColor = androidx.compose.ui.graphics.Color.Transparent
+                    ),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            Brush.horizontalGradient(
+                                listOf(
+                                    Color(0xFF001F54),
+                                    Color(0xFF0275DA)
+                                )
+                            )
+                        ),
                     navigationIcon = {
                         IconButton(onClick = {
                             scope.launch { drawerState.open() }
@@ -72,7 +89,12 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
             Box(
                 modifier = Modifier
                     .padding(padding)
-                    .background(Color(0xFF0275da))
+                    .background(Brush.horizontalGradient(
+                        listOf(
+                            Color(0xFF67ace9),
+                            Color(0xFFcce3f8)
+                        )
+                    ))
                     .fillMaxSize()
             ) {
                 val cards = viewModel.cards
