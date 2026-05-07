@@ -5,7 +5,8 @@ data class Root(
 )
 
 data class Board(
-    val decks: List<DeckContainer>
+    val decks: List<DeckContainer>,
+    val title: List<String>
 )
 
 data class DeckContainer(
@@ -29,5 +30,6 @@ data class Couple(
 
 data class DrawerCategory(
     val title: String,
+    val filePath : String,
     val decks: List<String>
 )

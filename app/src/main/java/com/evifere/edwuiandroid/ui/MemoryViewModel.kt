@@ -104,7 +104,8 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
             val decks = root.board.decks
 
             DrawerCategory(
-                title = jsonName,
+                title = root.board.title[0],
+                filePath = jsonName,
                 decks = decks.flatMap { it -> it.deck.map { deck -> deck.metadata.name } }
             )
         }

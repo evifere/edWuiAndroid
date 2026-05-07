@@ -52,7 +52,7 @@ fun AccordionItem(category: DrawerCategory, viewModel: MemoryViewModel, drawerSt
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                viewModel.loadDeck(category.title+".json",index)
+                                viewModel.loadDeck(category.filePath+".json",index)
                                 scope.launch{drawerState.close()}
                             }
                             .padding(start = 32.dp, top = 8.dp, bottom = 8.dp)
