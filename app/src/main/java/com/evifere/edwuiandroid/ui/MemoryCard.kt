@@ -2,6 +2,7 @@ package com.evifere.edwuiandroid.ui
 
 import android.net.Uri
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
@@ -11,6 +12,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,6 +23,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 
 @Composable
 fun MemoryCard(
@@ -38,13 +43,21 @@ fun MemoryCard(
             modifier = Modifier
                 .fillMaxSize()
                 .background(
-                    if (card.isFlipped) card.color
+                    if (card.isFlipped || card.isSelected.value) card.color
                     else Color(0xFF2196F3) // bleu
-                ),
+                )
+                .border(
+                    width = 3.dp,
+                    color = if (card.isSelected.value) Color.Blue else Color(0xFFF5E6A3)
+                )
+                .clickable {
+                    card.isSelected.value = !card.isSelected.value
+                }
+            ,
             contentAlignment = Alignment.Center
         ) {
 
-            if (card.isFlipped) {
+            if (card.isFlipped || card.isSelected.value) {
 
                 if(card.imagePath.count() > 0){
                     val uri = Uri.parse("file:///android_asset/${card.imagePath}")
