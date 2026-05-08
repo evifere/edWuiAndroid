@@ -11,5 +11,7 @@ data class CardModel(
     var isFlipped: Boolean = false,
     var isMatched: Boolean = false,
     var isSelected: MutableState<Boolean> = mutableStateOf(false),
-    var color: Color
+    var isError: MutableState<Boolean> = mutableStateOf(false),
+    var color: Color,
+    var couple_id : String
 )

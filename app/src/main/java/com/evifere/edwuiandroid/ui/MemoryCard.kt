@@ -35,7 +35,7 @@ fun MemoryCard(
         modifier = Modifier
             .padding(8.dp)
             .aspectRatio(1f) // carré
-            .clickable { onClick(card) },
+            /*.clickable { onClick(card) }*/,
         shape = RoundedCornerShape(16.dp)
     ) {
 
@@ -43,15 +43,27 @@ fun MemoryCard(
             modifier = Modifier
                 .fillMaxSize()
                 .background(
-                    if (card.isFlipped || card.isSelected.value) card.color
-                    else Color(0xFF2196F3) // bleu
+                    when {
+                        card.isError.value -> Color.Red
+
+                        card.isFlipped || card.isSelected.value ->
+                            card.color
+
+                        else -> Color(0xFF2196F3)
+                    }
                 )
                 .border(
                     width = 3.dp,
-                    color = if (card.isSelected.value) Color.Blue else Color(0xFFF5E6A3)
+                    color = when {
+                        card.isError.value -> Color.Red
+
+                        card.isSelected.value -> Color.Blue
+
+                        else -> Color(0xFFF5E6A3)
+                    }
                 )
                 .clickable {
-                    card.isSelected.value = !card.isSelected.value
+                    onClick(card)
                 }
             ,
             contentAlignment = Alignment.Center

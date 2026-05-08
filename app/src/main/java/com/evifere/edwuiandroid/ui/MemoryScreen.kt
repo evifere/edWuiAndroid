@@ -33,6 +33,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.evifere.edwuiandroid.data.CardModel
 import kotlinx.coroutines.launch
 
 
@@ -96,12 +97,14 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
             Box(
                 modifier = Modifier
                     .padding(padding)
-                    .background(Brush.horizontalGradient(
-                        listOf(
-                            Color(0xFF67ace9),
-                            Color(0xFFcce3f8)
+                    .background(
+                        Brush.horizontalGradient(
+                            listOf(
+                                Color(0xFF67ace9),
+                                Color(0xFFcce3f8)
+                            )
                         )
-                    ))
+                    )
                     .fillMaxSize()
             ) {
                 val cards = viewModel.cards
@@ -123,7 +126,25 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
                     ) {
                         items(cards.size) { index ->
                             val card = cards[index]
-                            MemoryCard(card)
+                            MemoryCard(card, onClick = { card ->
+                                val selectedCards = viewModel.selectedCards()
+                                    // si déjà sélectionnée → on peut désélectionner
+                                if (card.isSelected.value) {
+                                    card.isSelected.value = false
+                                    return@MemoryCard
+                                }
+
+                                // limite à 2 cartes
+                                if (selectedCards.size >= 2) {
+                                    return@MemoryCard
+                                }
+
+                                // sélection
+                                card.isSelected.value = true
+
+                                viewModel.removeCouple()
+                                }
+                            )
                         }
                     }
                 }

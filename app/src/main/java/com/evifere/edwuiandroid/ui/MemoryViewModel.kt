@@ -11,6 +11,11 @@ import com.evifere.edwuiandroid.data.*
 import com.evifere.edwuiandroid.json.JsonLoader
 import java.io.IOException
 import androidx.compose.ui.graphics.Color
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import java.util.UUID
+
 class MemoryViewModel(application: Application) : AndroidViewModel(application) {
 
     var cards = mutableStateListOf<CardModel>()
@@ -51,6 +56,7 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         var idCounter = 0
 
         currentDeck.value?.couple?.forEach { couple ->
+            val couple_id = UUID.randomUUID().toString()
             couple.card.forEach { raw ->
                 val image = extractImagePath(raw)
                 val text = extractTextFromSpan(raw)
@@ -61,7 +67,8 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
                         imagePath = image,
                         text = text,
                         isFlipped = !(currentDeck.value?.metadata?.hideunselected ?: true) ,
-                        color = color
+                        color = color,
+                        couple_id = couple_id
                     )
                 )
             }
@@ -132,6 +139,48 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         } catch (e: IOException) {
             e.printStackTrace()
             emptyList()
+        }
+    }
+
+    public fun selectedCards(): List<CardModel>
+    {
+        return cards.filter {
+            it.isSelected.value
+        }
+    }
+
+    fun removeCouple() {
+
+        val selected = selectedCards()
+
+        // sécurité
+        if (selected.size != 2) return
+
+        val first = selected[0]
+        val second = selected[1]
+
+        // même couple -> suppression
+        if (first.couple_id == second.couple_id) {
+
+            cards.remove(first)
+            cards.remove(second)
+
+        } else {
+
+            // pas le même couple -> désélection après 3 secondes
+            viewModelScope.launch {
+
+                first.isError.value = true
+                second.isError.value = true
+
+                delay(2000)
+                first.isError.value = false
+                second.isError.value = false
+
+                first.isSelected.value = false
+                second.isSelected.value = false
+
+            }
         }
     }
 }
