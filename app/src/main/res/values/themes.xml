@@ -2,4 +2,10 @@
 <resources>
 
     <style name="Theme.EdwuiAndroid" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.EdwuiAndroid.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_edwui</item>
+        <item name="postSplashScreenTheme">@style/Theme.EdwuiAndroid</item>
+    </style>
 </resources>
