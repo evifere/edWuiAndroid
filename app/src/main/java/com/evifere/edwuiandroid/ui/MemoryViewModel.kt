@@ -6,6 +6,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import com.google.gson.Gson
 import com.evifere.edwuiandroid.data.*
 import com.evifere.edwuiandroid.json.JsonLoader
@@ -30,6 +32,17 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         _currentDeck.value = deck
     }
 
+    var hasWon by mutableStateOf(false)
+        private set
+
+    public fun onVictory() {
+        hasWon = true
+    }
+
+    public fun resetGame() {
+        hasWon = false
+    }
+
     init {
         loadCategories()
         loadFirstGame()
@@ -47,6 +60,7 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     public fun loadDeck(fileName: String, index : Int){
+        resetGame()
         val json = JsonLoader.loadJsonFromAssets(getApplication<Application>().applicationContext,fileName)
         val root = Gson().fromJson(json, Root::class.java)
 
@@ -181,6 +195,10 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
                 second.isSelected.value = false
 
             }
+        }
+
+        if(cards.size == 0){
+            onVictory()
         }
     }
 }

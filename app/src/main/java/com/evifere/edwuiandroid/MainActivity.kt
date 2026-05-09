@@ -18,6 +18,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.evifere.edwuiandroid.ui.MemoryScreen
 import com.evifere.edwuiandroid.ui.theme.EdwuiAndroidTheme
 import com.evifere.edwuiandroid.ui.MemoryViewModel
+import com.evifere.edwuiandroid.ui.VictoryScreen
+
 class MainActivity : ComponentActivity() {
     private val viewModel: MemoryViewModel by viewModels {
         ViewModelProvider.AndroidViewModelFactory.getInstance(application)
@@ -28,7 +30,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EdwuiAndroidTheme {
-                MemoryScreen(viewModel = viewModel)
+                if(viewModel.hasWon){
+                    VictoryScreen(viewModel = viewModel)
+                }
+                else{
+                    MemoryScreen(viewModel = viewModel)
+                }
             }
         }
     }
