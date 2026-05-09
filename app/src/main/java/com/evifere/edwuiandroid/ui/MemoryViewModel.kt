@@ -28,6 +28,10 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
     private val _currentDeck = mutableStateOf<Deck?>(null)
     var currentDeck: State<Deck?> = _currentDeck
 
+    var currentFileName : String = "json/memo/pair/003-decouverte_niv2.json"
+
+    var currentIndex : Int = 2
+
     fun setDeck(deck: Deck) {
         _currentDeck.value = deck
     }
@@ -55,11 +59,13 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         categories = buildDrawerCategories(context,files)
 
     }
-    private fun loadFirstGame() {
-        loadDeck("json/memo/pair/003-decouverte_niv2.json",2)
+    public fun loadFirstGame() {
+        loadDeck(currentFileName,currentIndex)
     }
 
     public fun loadDeck(fileName: String, index : Int){
+        currentFileName = fileName
+        currentIndex = index
         resetGame()
         val json = JsonLoader.loadJsonFromAssets(getApplication<Application>().applicationContext,fileName)
         val root = Gson().fromJson(json, Root::class.java)

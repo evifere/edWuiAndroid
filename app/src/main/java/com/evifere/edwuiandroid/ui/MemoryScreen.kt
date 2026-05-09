@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.Button
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -113,6 +114,16 @@ fun MemoryScreen(viewModel: MemoryViewModel) {
                     modifier = Modifier.fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
+                    if(cards.isEmpty()){
+                        Spacer(modifier = Modifier.height(24.dp))
+
+                        Button(
+                            onClick = { viewModel.loadFirstGame() }
+                        ) {
+                            Text("Rejouer")
+                        }
+                        return@Box
+                    }
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Text(viewModel.currentDeck.value?.metadata?.name  ?: "",fontWeight = FontWeight.Bold,
