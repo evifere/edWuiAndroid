@@ -28,9 +28,9 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
     private val _currentDeck = mutableStateOf<Deck?>(null)
     var currentDeck: State<Deck?> = _currentDeck
 
-    var currentFileName : String = "json/memo/pair/003-decouverte_niv2.json"
+    var currentFileName : String = "json/memo/pair/001-premiermemo.json"
 
-    var currentIndex : Int = 2
+    var currentIndex : Int = 0
 
     fun setDeck(deck: Deck) {
         _currentDeck.value = deck
@@ -182,8 +182,15 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
         // même couple -> suppression
         if (first.couple_id == second.couple_id) {
 
-            cards.remove(first)
-            cards.remove(second)
+            viewModelScope.launch {
+                delay(300)
+                cards.remove(first)
+                cards.remove(second)
+
+                if(cards.size == 0){
+                    onVictory()
+                }
+            }
 
         } else {
 
@@ -203,8 +210,6 @@ class MemoryViewModel(application: Application) : AndroidViewModel(application) 
             }
         }
 
-        if(cards.size == 0){
-            onVictory()
-        }
+
     }
 }
